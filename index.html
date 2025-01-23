@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streaming Links</title>
+  <style>
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .video {
+      margin-bottom: 24px;
+    }
+    .service {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      transition: border-color 0.3s;
+    }
+    .service:hover {
+      border-color: #d1d5db;
+    }
+    .logo img {
+      height: 32px;
+      object-fit: contain;
+    }
+    .button {
+      font-size: 14px;
+      font-weight: 500;
+      padding: 6px 24px;
+      border: 1px solid #e5e7eb;
+      border-radius: 9999px;
+      text-decoration: none;
+      color: #000;
+      background: #fff;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .button:hover {
+      background-color: #ef4444; /* Red background */
+      color: #fff; /* White text */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Embedded YouTube Player -->
+    <div class="video">
+      <iframe 
+        width="100%" 
+        height="315" 
+        src="https://www.youtube.com/embed/yourid" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Spotify -->
+    <div class="service">
+      <div class="logo">
+        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png" alt="Spotify logo">
+      </div>
+      <a href="https://open.spotify.com/track/yourid" target="_blank" rel="noopener noreferrer" class="button">
+        STREAM IT
+      </a>
+    </div>
+
+    <!-- Apple Music -->
+    <div class="service">
+      <div class="logo">
+        <img src="https://www.apple.com/v/apple-music/s/images/shared/apple-music-logo__dcojfwkzna2q_large.svg" alt="Apple Music logo">
+      </div>
+      <a href="https://music.apple.com/yourid" target="_blank" rel="noopener noreferrer" class="button">
+        STREAM IT
+      </a>
+    </div>
+
+    <!-- YouTube -->
+    <div class="service">
+      <div class="logo">
+        <img src="https://www.youtube.com/img/desktop/yt_1200.png" alt="YouTube logo">
+      </div>
+      <a href="https://youtube.com/watch?v=yourid" target="_blank" rel="noopener noreferrer" class="button">
+        STREAM IT
+      </a>
+    </div>
+
+    <!-- Wynk Music -->
+    <div class="service">
+      <div class="logo">
+        <img src="https://wynk.in/_next/static/media/wynk-logo-new.8357c094.svg" alt="Wynk Music logo">
+      </div>
+      <a href="https://wynk.in/music/song/yourid" target="_blank" rel="noopener noreferrer" class="button">
+        STREAM IT
+      </a>
+    </div>
+
+    <!-- Amazon Music -->
+    <div class="service">
+      <div class="logo">
+        <img src="https://d5fx445wy2wpk.cloudfront.net/static/logo.svg" alt="Amazon Music logo">
+      </div>
+      <a href="https://music.amazon.com/albums/yourid" target="_blank" rel="noopener noreferrer" class="button">
+        STREAM IT
+      </a>
+    </div>
+
+    <!-- Saavn -->
+    <div class="service">
+      <div class="logo">
+        <img src="https://www.jiosaavn.com/_i/badges/saavn-logo-84x28.png" alt="Saavn logo">
+      </div>
+      <a href="https://www.jiosaavn.com/song/yourid" target="_blank" rel="noopener noreferrer" class="button">
+        STREAM IT
+      </a>
+    </div>
+  </div>
+</body>
+</html>
